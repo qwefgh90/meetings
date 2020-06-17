@@ -1,16 +1,60 @@
+
+# 컨센서스 결정(합의)
+
+컨센서스는 표준을 결정하는 프로세스에서 매우 중요한 부분이다.
+
+* 컨센서스를 형성하는 것은 각 전문가들이 더욱 자신있게 제안 할 수 있도록 도와준다.
+* 컨센서스는 불필요하게 했던 토론을 다시 하는 것을 막아준다. (단, 다시 토론해야 될정도로 변경이 많지 않을때)
+* 만약 구성원이 자신의 목소리가 잘 전달이 안된다고 생각하기 시작하면 표준을 만드는 작업 그대로 멈출 수 있으므로 
+  찬반에 대해 기록하는 것 역시 컨센서스를 만드는데에 매우 중요한 작업이다.
+
+## 대면 회의 합의 절차
+
+대면 회의를 할때 각 전문가들은 합의점을 제시해야하며 의논하는 과정에서 새로운 합의점들이 추가될 수 있다. 
+
+합의는 다음 절차를 따른다:
+
+1. 전문가는 모두가 눈으로 직접 읽을 수 있는 형식으로 질문을 한다. 
+   여러개의 합의점이 제시된 이후 투표에 붙여질 수 있다.
+2. 의장은 모든 참석자에게 질문에 대한 의견을 듣는다. 
+   그리고 투표를 진행하며 완전 찬성, 찬성, 중립, 반대, 완전 반대, 기권 중 하나를 선택할 수 있다.
+   서기는 투표 결과를 기록한다.
+3. 필요한 경우 의장은 몇몇 사람에게 왜 그들이 그런 선택을 했는지 물을 수 있다.
+4. 의장은 합의가 종료되었는지 결정할 수 있다.
+5. 참석자는 결정에 대한 공식적인 반대 의사를 표명할 수 있다. 
+   반대한 사람은 기술적으로 반대하는 이유를 설명해야하며 새로운 제안을 해야한다.
+   이러한 제안은 모호하거나 불완전할 수 있다. 주의사항: 워킹 그룹에서 
+   공식적인 반대는 W3C Director에 의해 검토된다. (커뮤니티 그룹 제외)
+   반대하는 이유나 이론적 해석을 말하지 않을 경우 검토 대상에서 제외될 수 있다.
+
+합의를 위해 필요한 찬성표의 수는 정해져 있지 않다. 경우에 따라 한명의 개발자 또는 사용자에 의해 
+합의가 되지 않을 수 있다. 중요한 점은 모든 참석자는 합의 절차가 잘 동작한다고 믿는 것이다.
+합의위에서 다른 합의를 할 수 있도록 의장은 노력해야한다.
+
+합의가 잘 되지 않았을 경우 더 많은 정보를 바탕으로 다시 토론을 진행할 수 있을 것이다.
+
+쉽게 합의가 될 경우, 의장은 이의제기 요청을 간단히 받고 넘어갈 수 있다.
+합의를 강제하기 위해 하나의 반대로 충분하다.
+
 # Determining consensus
-
-Consensus is critical in a standards process:
-
-* Gathering consensus helps champions guide their proposal with confidence.
-* Consensus prevents needlessly revisiting topics unless new information
-  surfaces warranting such revisitation.
-* If members don't believe that their voices are heard then the process can,
-  over time, break down. Recording dissent is therefore a critical part of
-  building consensus.
 
 ## In-person meeting consensus
 
+There is no specific number of votes required to establish or block
+consensus. In some circumstances a single implementor's or user's concerns may,
+at the chair's discretion, block consensus. That being said, it is critical that
+all participants believe the consensus process works! The chair must strive for
+consensus on consensus.
+
+Lack of consensus doesn't necessarily prevent an idea from being revisited
+later. "More information requested" or "request more work" are acceptable
+outcomes for lack of consensus.
+
+In some cases where consensus seems to obviously have been reached, the chair
+may poll a lighter-weight request for objections to unanimous consensus. A
+single objection is sufficient to force the above consensus process.
+
+------------------
 For in-person meetings, champions are expected to list points for which they
 will seek consensus in the meeting agenda, and new consensus points can be added
 in-person as the discussion proceeds.
@@ -34,21 +78,7 @@ Polling consensus is done by the chair:
    reviewed by the W3C Director. Such review is not guaranteed for the Community
    Group. Formal objections that do not provide substantive arguments or
    rationale are unlikely to receive serious consideration by the Director.
-
-There is no specific number of votes required to establish or block
-consensus. In some circumstances a single implementor's or user's concerns may,
-at the chair's discretion, block consensus. That being said, it is critical that
-all participants believe the consensus process works! The chair must strive for
-consensus on consensus.
-
-Lack of consensus doesn't necessarily prevent an idea from being revisited
-later. "More information requested" or "request more work" are acceptable
-outcomes for lack of consensus.
-
-In some cases where consensus seems to obviously have been reached, the chair
-may poll a lighter-weight request for objections to unanimous consensus. A
-single objection is sufficient to force the above consensus process.
-
+----------------
 ## Online consensus
 
 It is critical that work progresses between in-person meetings: agreed-upon
