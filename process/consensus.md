@@ -36,44 +36,33 @@
 누가봐도 간단한 주제에 대해서는 이의제기 요청을 간단히 받고 넘어갈 수 있다.
 빠른 합의를 위해 하나의 반대만 들어봐도 충분하다.
 
+## 온라인 상에서의 합의 절차 (Online consensus)
+
+회의(in-person meetings)를 통해 많은 업무가 진척될 수 있다. 설계를 한다던지 새로운 아이디어를 어느 수준까지 구체화 시킬 수 있다.
+끝에는 Github 저장소나 화상 회의를 통해 합의에 도달할 수 있다.
+화상 회의에서 결정된 내용은 모두 기록되며 대면 회의와 같은 방식으로 공개될 것이다.
+
+다음은 온라인상으로 의사 결정하는 것과 관련된 개념이다.
+
+* 다른 소속의 기여자(Contributors)들이라 함은 다른 기관이나 다른 회사에 연관된 개인을 의미한다.
+* 관심있는 집단(Interested parties)은 WebAssembly 커뮤니티에 참석하면서 특정 주제에 관심있는 개인들, 회사들, 기관들이다.
+* 작은 집단(Small group)은 특정 제안에 관심있는 커뮤니티 그룹나 워킹 그룹 구성원들이다.
+
+다음 케이스들은 구별된다.
+
+1. 편집자(Editor)는 독자적으로 기술과 관련없는 변경을 할 수 있다. Github 이슈나 Pull Request로 충분하다.
+   Their title should identify them as editorial. 반대가 없는한 최소 하루 이상 다른 기관의 사람에 의해 검토를 받고 이슈를 닫거나 병합할 수 있다.
+   Editors shall revisit the editorial nature of the change if there is any contention.
+2. 작은 기술적 변경사항이나 추가등은 Github 이슈나 Pull Request로 관리될 수 있다. 
+   작성자는 책임지고 관심있는 부서들이 승인을 하도록 만들어야 한다.
+   간단하게 Github에 사람을 호출하는 것은 눈에띄지 않을 수 있다. 작성자는 책임지고 지속적으로 관심있는 집단과 연락하고 피드백을 받아야 한다.
+   반대가 없는한 최소 일주일 이상 검토를 받은 뒤 이슈를 닫거나 병합할 수 있다.
+   만약에 관심있는 집단이 승인을 하지 않는다면 합의에 도달하지 않는 것으로 여겨진다.
+   기여자(contributor)는 다음 회의로 합의를 미루고 의장은 다음 회의의 안건으로 올릴 것이다.
+
+
 ## Online consensus
 
-It is critical that work progresses between in-person meetings: agreed-upon
-designs need to move forward, and new ideas need to reach some level of maturity
-before being discussed in-person. To that end, this group can reach consensus
-online, either on GitHub repositories under the WebAssembly organization or in
-official video calls. In the latter case, decisions are recorded in meeting
-notes and published just like in-person meeting notes are published.
-
-We introduce the following concepts to help the online decision process:
-
-* Contributors of *different affiliation* are individuals who are affiliated
-  with different companies or institutions.
-* *Interested parties* are individuals, companies, or institutions who usually
-  participate in the WebAssembly Community Group or Working Group and are
-  interested in a particular topic.
-* *Small group* is a subset of Community Group and Working Group participants
-  who decide to collaborate on a single targeted proposal.
-
-We differentiate the following cases:
-
-1. Editors are empowered to make changes that have no technical impact without
-   explicit group decision. GitHub issues and pull requests are
-   sufficient. Their title should identify them as editorial. Closing or merging
-   them after a full work day of positive review by at least one contributor of
-   different affiliation is acceptable as long as there is no objection. Editors
-   shall revisit the editorial nature of the change if there is any contention.
-2. Small technical changes or additions can be discussed in GitHub issues and
-   pull requests. It is the author's responsibility to ensure that interested
-   parties sign off. Simply mentioning people on GitHub may go unnoticed, the
-   onus remains on the author to contact interested parties and obtain their
-   feedback. Closing or merging after a full week of positive review by at least
-   three contributors of different affiliations is acceptable as long as there
-   is no objection. Consensus will be deemed to not have been reached if
-   interested parties did not sign off. At any point in time a contributor can
-   request that final consensus be delayed to an in-person meeting. In this
-   case, the chair puts the item on the group's agenda of upcoming
-   discussions.
 3. Substantial technical changes or additions are usually carried in their own
    GitHub repository by a champion. It is critical that these proposals be able
    to evolve quickly without much process. Early on in such a proposal's
