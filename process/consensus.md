@@ -65,29 +65,11 @@
    작은 그룹에 의해 내려진 결정은 대면 회의까지 계속 참조될 수 있다.
 
 보통 커뮤니티 그룹은 할일이 많은 그룹이기 때문에 1번과 2번은 케이스에 해당되지 않는다. 1번과 2번은 워킹 그룹에만 적용된다.
-
-## Online consensus
-
-3. Substantial technical changes or additions are usually carried in their own
-   GitHub repository by a champion. It is critical that these proposals be able
-   to evolve quickly without much process. Early on in such a proposal's
-   lifetime no consensus is needed and a single champion can modify the proposal
-   at will. As the proposal matures it is expected that the champion will seek
-   collaborators to form a small group. Gauging consensus in the small group is
-   left up to the champion, with input from the chair. When a proposal is near
-   maturity the champion shall bring it to an in-person meeting and seek wider
-   consensus on open design points and contended issues. All decisions made by
-   the small group can be revisited until consensus is reached at an in-person
-   meeting.
-
-Only 1. and 2. apply to the Working Group since the Community Group is the sole
-venue where substantial work can occur. It is expected that Working Group
+It is expected that Working Group
 changes or additions in 2.'s category are validated by the Community Group
-before being adopted by the Working Group. It is expected that all changes or
-additions which reach consensus in the Community Group will be forwarded to the
-Working Group for adoption.
+before being adopted by the Working Group. 커뮤니티에서 발생한 모든 합의는 워킹 그룹에 전달되어 채택될 수 있다.
 
-## Decision process
+## 결정 절차 (Decision process)
 
 As per the [Community Group charter](https://webassembly.github.io/cg-charter/):
 
