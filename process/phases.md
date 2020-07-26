@@ -1,12 +1,26 @@
 # WebAssembly W3C Process
 
+이 파일은 기능 제안이 표준화 절차에서 어떻게 이뤄지는지 나타낸다.
+
 This file describes how feature proposals will progress through
 the standardization process.
+
+기능은 웹 어셈블리에 상당히 큰 변화이다. such that it for example
+requires additional opcodes, types, tests, or module sections.
+See case #3 [here](consensus.md).
 
 A feature is a substantial change to WebAssembly, such that it for example
 requires additional opcodes, types, tests, or module sections.
 See case #3 [here](consensus.md).
 
+다음과 같은 것이 기능이다.:
+
+  * Adds an opcode or other pieces of abstract syntax
+  * Changes or extends the binary format
+  * Changes or extends the text format
+  * Requires adding or changing tests
+  * Requires extending or changing the reference interpre
+  
 Something is definitely a feature if it:
 
   * Adds an opcode or other pieces of abstract syntax
@@ -15,12 +29,31 @@ Something is definitely a feature if it:
   * Requires adding or changing tests
   * Requires extending or changing the reference interpreter
 
+wasm 선언문에 맞지 않거나 오히려 선언문 수정할 정도의 제안이 아니라면 기능으로 분류하지 않는다.
+
 Something is out-of-scope if it doesn't fit the [WebAssembly Working Group's charter](https://www.w3.org/2017/08/wasm-charter) and there's agreement that the charter should not be amended to cover the proposal.
+
+일번적으로 표준화 프로세스는 일련의 단계를 거친다. 그러나 이슈가 발견되거나, 합의사항이 의존적일 경우 제안들은 이전 단계로 돌아가야 한다.
 
 In general, the process moves forward through a series of numbered phases.
 However, if issues are uncovered or consensus devolves,
 proposals should back up to the appropriate prior step.
 
+## 0. 사전 제안 [개인 기여자]
+
+제출 요구사항:
+
+  * 커뮤니티 그룹 구성원 아디이어를 가지고 있다. 어떠한 커뮤니티 그룹 투표가 요구되지 않는다.
+  
+이 단계는 다음과 같이 진행된다.
+
+  1. 특정 아이디어에 대한 이슈는 [설계 프로젝트](https://github.com/WebAssembly/design/issues)에 저장된다.
+  1. 기능에 대한 토론이 이슈에서 이뤄진다.
+  1. 제안 주도자가 나타난다. 제안 주도자들은 제안을 [제안 목록](https://github.com/WebAssembly/proposals/blob/master/README.md)에 추가할 것이다.
+  1. 주도자는 기능에 대한 형식적인 설명을 이슈나 별도 프로젝트에 작성할 것이다.
+  1. [격주로 열리는 화장 전화](https://github.com/WebAssembly/meetings/) 회의 주제 중 하나로 추가된다. 이는 Pull request을 활용한다.
+  1. 이 제안에 대한 일반적인 관심에 대해 투표합니다. 합의 요구사항들은 적다.: 커뮤니티 구성원들은 이 기능이 프로젝트의 범위 안에 있는지 그럴싸하게 동작할 것이라 믿는지? 정도만 확인한다.
+  
 ## 0. Pre-Proposal [Individual Contributor]
 
 Entry requirements:
@@ -89,7 +122,7 @@ Entry requirements:
      (though these two can be done as part of step 3 at the Working Group
       chair's discretion).
    * Community Group has reached consensus in support of the feature.
-   * NOTE: By this point the proposal is basically frozen,
+   * NOTE: By this point the proposal is basically frozen, since
      the Community Group is the sole venue where substantial work can occur.
 
 At this point:
