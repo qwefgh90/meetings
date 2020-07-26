@@ -13,7 +13,7 @@ A feature is a substantial change to WebAssembly, such that it for example
 requires additional opcodes, types, tests, or module sections.
 See case #3 [here](consensus.md).
 
-다음과 같은 것이 기능이다.:
+다음을 포함하면 기능이라 불린다.:
 
   * Adds an opcode or other pieces of abstract syntax
   * Changes or extends the binary format
@@ -45,14 +45,14 @@ proposals should back up to the appropriate prior step.
 
   * 커뮤니티 그룹 구성원 아디이어를 가지고 있다. 어떠한 커뮤니티 그룹 투표가 요구되지 않는다.
   
-이 단계는 다음과 같이 진행된다.
+이 단계는 다음을 포함한다.
 
   1. 특정 아이디어에 대한 이슈는 [설계 프로젝트](https://github.com/WebAssembly/design/issues)에 저장된다.
   1. 기능에 대한 토론이 이슈에서 이뤄진다.
   1. 제안 주도자가 나타난다. 제안 주도자들은 제안을 [제안 목록](https://github.com/WebAssembly/proposals/blob/master/README.md)에 추가할 것이다.
   1. 주도자는 기능에 대한 형식적인 설명을 이슈나 별도 프로젝트에 작성할 것이다.
   1. [격주로 열리는 화장 전화](https://github.com/WebAssembly/meetings/) 회의 주제 중 하나로 추가된다. 이는 Pull request을 활용한다.
-  1. 이 제안에 대한 일반적인 관심에 대해 투표합니다. 합의 요구사항들은 적다.: 커뮤니티 구성원들은 이 기능이 프로젝트의 범위 안에 있는지 그럴싸하게 동작할 것이라 믿는지? 정도만 확인한다.
+  1. 이 제안에 대한 일반적인 관심에 대해 투표한다. 합의 요구사항들은 적다.: 커뮤니티 구성원들은 이 기능이 프로젝트의 범위 안에 있는지 그럴싸하게 동작할 것이라 믿는지? 정도만 확인한다.
   
 ## 0. Pre-Proposal [Individual Contributor]
 
@@ -69,6 +69,20 @@ During this phase:
   1. An item is added to the [bi-weekly Community Group video calls](https://github.com/WebAssembly/meetings/)'s agenda through a pull request.
   1. The CG votes on general interest in this proposal. Consensus requirements are low: do members believe that the feature is in-scope and will plausibly be workable?
 
+## 1. 기능 제안 [커뮤니티 그룹]
+
+제출 요구사항:
+
+  * 사전 제안이 승인되어야 한다.
+  
+이 단계는 다음을 포함한다.
+
+  1. 제안이 목록에 미리 추가되지 않았다면, [제안 목록](https://github.com/WebAssembly/proposals/blob/master/README.md)에 추가되어야 한다.
+  1. 웹 어셈블리 조직의 관리자나 주도자는 의해 spec 저장소를 포킹한 저장소를 만든다.
+  1. 주도자는 많은 합의를 만들기 위해 노력할 것이다.
+  1. 풀 리퀘스트나 이슈는 기능의 설계를 위해 사용된다. 특히 spec 텍스트는 2단계로 이동하기 전에 반드시 완성된 상태로 있어야만 한다. 
+  1. 기능의 실현 가능성에 대한 시연에 관련되어 있다면, 프로토타입 구현은 관심있는 embedders에 의해 수행된다. (브랜치에서)
+
 ## 1. Feature Proposal [Community Group]
 
 Entry requirements:
@@ -81,8 +95,20 @@ During this phase:
   1. A new repository, forking the spec repo, is created by one of the WebAssembly organization administrators, or transfered to the WebAssembly organization by the champion.
   1. The champion will attempt to reach broad consensus in the Community Group.
   1. Pull requests and issues are used to iterate on the design of the feature. Specifically, the spec text must be in a reasonably complete state before attempting to move to phase 2.
-  1. If relevant to demonstrate the viability of a feature, prototype implementations of the feature are implemented by interested embedders (possibly on a branch).
+  1. If demonstrate the viability of a feature, prototype implementations of the feature are implemented by interested embedders (possibly on a branch).
 
+## 2. 활용가능한 스펙 [커뮤니티 + 워킹그룹]
+
+제출 요구사항:
+
+   * 높은 수준의 합의가 도출되었으며 포킹된 저장소에서 영문으로 이용가능한 스펙
+   * *형식적인 노테이션, 테스트 묶음, 참조 인터프리터에 대한 업데이트는 아직 요구되지 않는다.*
+
+이 단계는 다음을 포함한다.
+
+   * 해당 기능을 프로토타이핑 하며 여러개의 포괄적인 테스트가 추가될 수 있는 한개 또는 여러개의 구현체가 개발된다.
+   * 테스트 묶음이 추가된다. 레퍼런스 인터프리터에서 패스될 필요는 없으나 몇몇 구현에서는 패스되어야 한다.
+ 
 ## 2. Proposed Spec Text Available [Community + Working Group]
 
 Entry requirements:
